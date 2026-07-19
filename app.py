@@ -293,7 +293,22 @@ with st.sidebar:
             "Heartwarming",
             "Mind-bending",
             "Funny & light",
-            "Action-packed"
+            "Action-packed",
+            "Romantic",
+            "Family-friendly",
+            "Thriller & suspense",
+            "Hidden gems"
+            "Biography",
+            "Sci-Fi & Fantasy",
+            "Documentary",
+            "Horror",
+            "Musical",
+            "Adventure",
+            "Animated",
+            "Fictional",
+            "Historical",
+            "Sports",
+            "Spiritual"
         ]
     )
 
@@ -313,7 +328,14 @@ with st.sidebar:
             "I want a thriller with twists",
             "I want a family-friendly pick",
             "I want something with a strong cast",
-            "I want a hidden gem"
+            "I want a hidden gem",
+            "I want a movie that makes me think",
+            "I want a movie that makes me laugh",
+            "I want a movie that makes me cry",
+            "I want a movie that inspires me",
+            "I want a movie that surprises me",
+            "I want a movie that is horrorful and scary",
+            "I want a movie that is romantic and heartwarming",
         ]
     )
 
@@ -334,7 +356,7 @@ for item in st.session_state.chat_history:
 st.markdown(
     """
     <div class="footer-note">
-        powered by ReelMatch
+        powered by ReelMatch (Author - Arka)
     </div>
     """,
     unsafe_allow_html=True
