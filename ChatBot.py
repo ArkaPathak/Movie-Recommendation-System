@@ -23,8 +23,8 @@ def movie_recommendation_chat(user_message, mood_context=""):
     # Step 1: Append the user's message to the conversation history/List
     conversation.append({"role": "user", "parts": [{"text": context_text}]})
 
-    # Force Gemini 3.5 Flash via environment variable
-    model_name = os.getenv("GEMINI_MODEL", "gemini-3.5-flash")
+    # Force Gemini 3.1 Flash Lite via environment variable
+    model_name = os.getenv("GEMINI_MODEL", "gemini-3.1-flash-lite")
 
     # Step 2: Send the conversation history to the LLM for generating a response
     try:
